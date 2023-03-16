@@ -5,19 +5,29 @@
 
 int main()
 {
-    int h1, m1, s1, h2, m2, s2, sum_h, sum_m, sum_s;
+    int hrs, min, sec, rem_sec;
 
-    printf("Enter the first time (hh:mm:ss): ");
-    scanf("%d:%d:%d", &h1, &m1, &s1);
+    printf("Enter the time in sec");
+    scanf("%d", &sec);
 
-    printf("Enter the second time (hh:mm:ss): ");
-    scanf("%d:%d:%d", &h2, &m2, &s2);
+    // printf("Enter the first time (hh:mm:ss): ");
+    // scanf("%d:%d:%d", &hrs, &min, &sec);
 
-    sum_s = (s1 + s2) % 60;
-    sum_m = (m1 + m2 + (s1 + s2) / 60) % 60;
-    sum_h = h1 + h2 + (m1 + m2 + (s1 + s2) / 60) / 60;
+    // printf("Enter the second time (hh:mm:ss): ");
+    // scanf("%d:%d:%d", &h2, &m2, &s2);
 
-    printf("The sum of the times is: %02d:%02d:%02d\n", sum_h, sum_m, sum_s);
+    // To Convert hours into second
+    hrs = sec / 3600;
+    // It will Display Remaining Second after Hours
+    rem_sec = sec % 3600;
+
+    // To Convert Minute into second
+    min = rem_sec / 60;
+
+    // It will Display Remaining Second After Minute
+    rem_sec = rem_sec % 60;
+
+    printf("Hour=%d, Minute=%d, and Second=%d", hrs, min, rem_sec);
 
     getch();
     return 0;

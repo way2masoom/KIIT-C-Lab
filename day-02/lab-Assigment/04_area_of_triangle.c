@@ -1,24 +1,33 @@
 // 	WAP to calculate area of triangle whose Three side are given
 #include <stdio.h>
-#include <conio.h>
+#include <math.h>
 
 int main()
 {
-    // 2 sides of triangle are given
-    int l = 10, b = 5, h = 20;
+    int x, y, z; // Side of Triangle
+    float area;
 
-    // printf("Enter the length of Triangle:");
-    // scanf("%d", l);
+    // taking input from user
+    printf("Enter First sides of triangle:\n");
+    scanf("%d", &x);
 
-    // printf("Enter the base of Triangle:");
-    // scanf("%d", b);
+    printf("Enter three Second of triangle:\n");
+    scanf("%d", &y);
 
-    // printf("Enter the height of Triangle:");
-    // scanf("%d", h);
+    printf("Enter three Third of triangle:\n");
+    scanf("%d", &z);
 
-    int area = l * b * h;
-    printf("The area of 3 sides triangle is=%d", area);
+    int s; // s=perimeter
 
-    getch();
+    // Calculation to find the perimeter of Triangle
+    s = (x + y + z) / 2;
+
+    printf("perimeter of Triangle is = %d", s);
+
+    // Calculation to find the are of Triangle
+    area = sqrt(s * (s - x) * (s - y) * (s - z));
+    printf("\narea of triangle is %f", area);
+
+    // getch();
     return 0;
 }
