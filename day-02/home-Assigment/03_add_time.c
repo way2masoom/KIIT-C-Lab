@@ -27,6 +27,14 @@ int main()
     // It will Display Remaining Second After Minute
     rem_sec = rem_sec % 60;
 
+    /*******************   Another Method *****************/
+
+    // hrs = sec / 3600;        // To Convert hours into second
+    // min = (sec % 3600) / 60; // To Convert Minute into second
+    // sec = sec % 60;          // To Convert Second into second
+
+    /*******************   Another Method *****************/
+
     printf("Hour=%d, Minute=%d, and Second=%d", hrs, min, rem_sec);
 
     getch();
