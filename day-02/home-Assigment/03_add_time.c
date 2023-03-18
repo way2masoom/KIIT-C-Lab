@@ -5,16 +5,16 @@
 
 int main()
 {
-    int hrs, min, sec, rem_sec;
+    int hrs, min, sec, rem_sec, hrs2, min2, sec2;
 
-    printf("Enter the time in sec");
-    scanf("%d", &sec);
+    // printf("Enter the time in sec");
+    // scanf("%d", &sec);
 
-    // printf("Enter the first time (hh:mm:ss): ");
-    // scanf("%d:%d:%d", &hrs, &min, &sec);
+    printf("Enter the first time (hh:mm:ss): ");
+    scanf("%d:%d:%d", &hrs, &min, &sec);
 
-    // printf("Enter the second time (hh:mm:ss): ");
-    // scanf("%d:%d:%d", &h2, &m2, &s2);
+    printf("Enter the Second time (hh:mm:ss): ");
+    scanf("%d:%d:%d", &hrs2, &min2, &sec2);
 
     // To Convert hours into second
     hrs = sec / 3600;
