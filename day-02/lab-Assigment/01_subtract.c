@@ -11,7 +11,7 @@ int main()
     printf("Enter the First Number1:");
     scanf("%d", &num1);
 
-    printf("Enter the First Number2:");
+    printf("Enter the Second Number2:");
     scanf("%d", &num2);
 
     // Calculation for Subtracting

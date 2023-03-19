@@ -7,7 +7,7 @@ int main()
 {
 
     int sec, min, hrs;
-    printf("Enter the Second:", sec);
+    printf("Enter the Second:", &sec);
     scanf("%d", sec);
 
     hrs = sec / 3600;        // To Convert hours into second
