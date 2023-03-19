@@ -1,4 +1,4 @@
-// Write a program to calculate the area of a rectangle formula(area = (1/2)* b * h)
+// WAP to calculate area of a triangle whose base and height is givenformula(area = (1/2)* b * h)
 #include <stdio.h>
 #include <conio.h>
 
@@ -15,7 +15,7 @@ int main()
 
     // Calculation
     area = (1.0 / 2.0) * b * h;
-    printf("The are of TRIANGLE is =%f", area);
+    printf("The area of TRIANGLE is =%f", area);
 
     getch();
     return 0;
