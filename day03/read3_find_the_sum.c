@@ -13,7 +13,7 @@ int main()
 
     int sum = a + c + d;
 
-    printf("The sum of 3 digits number is = %d", sum);
+    printf("The sum of 3 digits number is = %d", sum);  
 
     return 0;
 }
