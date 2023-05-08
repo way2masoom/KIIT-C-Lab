@@ -38,7 +38,7 @@ int main()
 
     {
         root1 = -b / (2 * a);
-        printf("The roots of quardatic equation are :%d", root1);
+        printf("The roots of quadratic equation are :%d", root1);
     }
 
     return 0;
