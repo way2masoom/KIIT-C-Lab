@@ -1,4 +1,4 @@
-//finding the root of quadratics Equation
+// finding the root of quadratics Equation
 #include <stdio.h>
 #include <math.h>
 int main()
