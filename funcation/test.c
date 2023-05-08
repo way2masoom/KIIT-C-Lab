@@ -4,11 +4,11 @@ void print()
 {
     int a = 0; // for auto storage function
     a = a + 10;
-    print("\n %d ", a);
+    printf("\n %d ", a);
 }
 int main()
 {
-    print();
+    print(); // Calling Function
 
     return 0;
 }
